@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Code2, Database, Brain, Stethoscope, Zap, Globe } from 'lucide-react';
+import { ChevronDown, Code2, Database, Brain, Stethoscope, Zap, Globe, LucideIcon } from 'lucide-react';
 
 interface FloatingParticleProps {
   delay: number;
@@ -22,7 +22,7 @@ const FloatingParticle = ({ delay, duration = 25, size = 4 }: FloatingParticlePr
 );
 
 interface FloatingIconProps {
-  Icon: React.ComponentType<{ size?: number }>;
+  Icon: LucideIcon;
   delay: number;
   duration?: number;
   size?: number;

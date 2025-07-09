@@ -116,6 +116,30 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">About Me</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
           </motion.div>
+          
+          {/* About Me Content */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto mb-16"
+          >
+            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 md:p-12 shadow-lg">
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
+                From Analysis to Innovation
+              </h3>
+              <div className="text-lg text-gray-700 leading-relaxed space-y-4">
+                <p>
+                  I'm Ravi, a problem solver who builds AI solutions that actually work. I discovered the power of combining analytical thinking with modern technology to solve complex challenges across industries.
+                </p>
+                <p>
+                  I specialize in turning messy data into intelligent systems - whether that's predicting outcomes, automating decisions, or finding patterns that humans miss.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+          
           <div className="mb-12">
             <CleanSkillsSection />
           </div>
@@ -135,7 +159,7 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Featured Projects</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Here are some of the healthcare AI solutions I've built that are making a real impact in the industry.
+              Here are some of the AI solutions I've built that transform complex challenges into intelligent, actionable systems.
             </p>
           </motion.div>
           
@@ -159,7 +183,7 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Let's Work Together</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              I'm always interested in new opportunities, whether it's building healthcare AI solutions, 
+              I'm always interested in new opportunities, whether it's building AI solutions that solve real problems, 
               consulting on technical projects, or collaborating on innovative ideas.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -182,7 +206,7 @@ export default function Home() {
         <div className="container-max text-center">
           <div className="mb-6">
             <h3 className="text-2xl font-bold mb-2">Ravi Suresh</h3>
-            <p className="text-gray-400">Health AI Developer & Web Engineer</p>
+            <p className="text-gray-400">AI Solution Builder & Strategic Problem Solver</p>
           </div>
           <div className="flex justify-center space-x-6 mb-6">
             <a href="mailto:ravi.suresh.ai@gmail.com" className="text-gray-400 hover:text-white transition-colors">

@@ -71,21 +71,30 @@ const TechStackCloud: React.FC<TechStackCloudProps> = ({ isVisible }) => {
   const technologies = [
     { name: 'React', color: 'from-blue-400 to-blue-600' },
     { name: 'Next.js', color: 'from-gray-700 to-gray-900' },
-    { name: 'Python', color: 'from-yellow-400 to-blue-500' },
-    { name: 'FastAPI', color: 'from-green-400 to-emerald-600' },
     { name: 'TypeScript', color: 'from-blue-600 to-blue-800' },
     { name: 'Tailwind CSS', color: 'from-cyan-400 to-teal-600' },
+    { name: 'Python', color: 'from-yellow-400 to-blue-500' },
+    { name: 'FastAPI', color: 'from-green-400 to-emerald-600' },
+    { name: 'Node.js', color: 'from-green-500 to-green-700' },
     { name: 'PostgreSQL', color: 'from-blue-600 to-indigo-700' },
-    { name: 'AWS', color: 'from-orange-400 to-orange-600' },
     { name: 'Scikit-learn', color: 'from-orange-500 to-red-600' },
+    { name: 'TensorFlow', color: 'from-orange-400 to-orange-600' },
+    { name: 'Random Forest', color: 'from-green-600 to-green-800' },
+    { name: 'Data Analysis', color: 'from-purple-400 to-purple-600' },
+    { name: 'AWS', color: 'from-orange-400 to-orange-600' },
+    { name: 'Vercel', color: 'from-gray-600 to-gray-800' },
+    { name: 'Docker', color: 'from-blue-500 to-blue-700' },
+    { name: 'Cursor AI', color: 'from-purple-500 to-purple-700' },
+    { name: 'Git', color: 'from-orange-500 to-red-600' },
     { name: 'Streamlit', color: 'from-red-400 to-pink-600' },
+    { name: 'LLM Integration', color: 'from-indigo-500 to-indigo-700' },
   ];
 
   return (
     <div className={`transform transition-all duration-1000 delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
       <div className="text-center mb-8">
         <h3 className="text-2xl font-bold text-gray-800 mb-3">Technologies I Work With</h3>
-        <p className="text-gray-600">Tools and frameworks I use to bring ideas to life</p>
+        <p className="text-gray-600">A comprehensive toolkit for building intelligent, scalable solutions</p>
       </div>
       
       <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
@@ -131,32 +140,32 @@ const CleanSkillsSection: React.FC = () => {
 
   const categories = [
     {
-      icon: Code2,
-      title: 'Frontend Development',
-      description: 'Building responsive, user-friendly interfaces with modern frameworks and clean, maintainable code.',
-      skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
-      gradient: 'from-blue-500 to-purple-600'
-    },
-    {
-      icon: Server,
-      title: 'Backend Development',
-      description: 'Creating robust APIs and server-side solutions that power healthcare applications.',
-      skills: ['Python', 'FastAPI', 'PostgreSQL', 'AWS'],
-      gradient: 'from-green-500 to-teal-600'
-    },
-    {
       icon: Brain,
-      title: 'AI & Machine Learning',
-      description: 'Developing intelligent systems for healthcare analytics and predictive modeling.',
-      skills: ['Scikit-learn', 'TensorFlow', 'Data Analysis', 'Streamlit'],
+      title: 'AI Solution Development',
+      description: 'Building machine learning models and intelligent systems that solve real business problems. From predictive analytics to automated decision-making.',
+      skills: ['Random Forest', 'Scikit-learn', 'Predictive Modeling', 'Data Pipeline Design'],
       gradient: 'from-purple-500 to-pink-600'
     },
     {
+      icon: Code2,
+      title: 'Full-Stack Development',
+      description: 'Creating complete applications from database to user interface. Focus on performance, user experience, and clean architecture.',
+      skills: ['React', 'Next.js', 'Python', 'FastAPI', 'PostgreSQL', 'AWS EC2'],
+      gradient: 'from-blue-500 to-purple-600'
+    },
+    {
       icon: Stethoscope,
-      title: 'Healthcare Domain',
-      description: 'Deep understanding of clinical workflows and healthcare technology challenges.',
-      skills: ['Clinical Knowledge', 'Healthcare Systems', 'Medical Terminology', 'HIPAA'],
+      title: 'Healthcare Technology',
+      description: 'Deep understanding of clinical workflows, regulatory requirements, and healthcare data challenges. Can navigate HIPAA, clinical terminology, and provider operations.',
+      skills: ['Clinical Workflows', 'Healthcare Systems', 'Medical Data', 'Compliance'],
       gradient: 'from-red-500 to-pink-600'
+    },
+    {
+      icon: TrendingUp,
+      title: 'Strategic Problem Solving',
+      description: 'Breaking down complex business challenges into actionable technical solutions. Understanding the "why" before building the "what."',
+      skills: ['System Design', 'Process Analysis', 'User Research', 'Strategic Planning'],
+      gradient: 'from-green-500 to-teal-600'
     }
   ];
 
@@ -175,7 +184,7 @@ const CleanSkillsSection: React.FC = () => {
             What I Do
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Combining medical insight with modern technology to create solutions that make a difference
+            Transforming complex challenges into intelligent solutions through strategic problem-solving and cutting-edge technology
           </p>
         </div>
 

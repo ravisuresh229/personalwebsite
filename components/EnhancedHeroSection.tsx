@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Code2, Database, Brain, Stethoscope, Zap, Globe, LucideIcon } from 'lucide-react';
+import { ChevronDown, Code2, Database, Brain, Stethoscope, Zap, Globe, LucideIcon, Github, Mail } from 'lucide-react';
 
 interface FloatingParticleProps {
   delay: number;
@@ -124,33 +124,52 @@ const EnhancedHeroSection = () => {
           {/* Animated Tagline with Better Styling */}
           <div className="text-xl md:text-2xl text-gray-200 mb-8 h-16 flex items-center justify-center font-light">
             <TypeWriter 
-              text="Bridging Healthcare and AI with modern, user-centric solutions"
+              text="Building AI solutions that solve real problems"
               className="max-w-3xl leading-relaxed"
             />
           </div>
 
-          {/* Enhanced Buttons with Better Spacing */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-            <a href="#projects" className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl relative overflow-hidden">
-              <span className="relative z-10 font-semibold">View Projects →</span>
+          {/* Social & Resume Row */}
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
+            {/* Download Resume Button */}
+            <a
+              href="/Ravi_Suresh_Resume.pdf"
+              download="Ravi_Suresh_Resume.pdf"
+              className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl relative overflow-hidden"
+              title="Download Resume"
+              aria-label="Download Resume"
+            >
+              <span className="relative z-10 font-semibold">Download Resume</span>
               <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-white/0 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
             </a>
-            
-            <button className="group px-8 py-4 border-2 border-white/30 text-white rounded-full hover:bg-white/10 hover:border-white/50 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm">
-              <span className="font-semibold">Download Resume</span>
-            </button>
+            {/* Social Icons */}
+            <div className="flex gap-4">
+              <a
+                href="https://github.com/ravisuresh229"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 text-white hover:from-purple-600 hover:to-blue-500 transition-all duration-300 shadow-md hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                title="GitHub"
+                aria-label="GitHub"
+              >
+                <Github className="w-6 h-6" />
+              </a>
+              <a
+                href="mailto:ravikirans723@gmail.com?subject=Let's%20work%20together&body=Hi%20Ravi,%0A%0AI%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20working%20together.%0A%0ABest%20regards,"
+                className="p-3 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 text-white hover:from-purple-600 hover:to-blue-500 transition-all duration-300 shadow-md hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                title="Email"
+                aria-label="Email"
+              >
+                <Mail className="w-6 h-6" />
+              </a>
+              {/* LinkedIn not provided in resume, so skip or add placeholder if needed */}
+            </div>
           </div>
 
-          {/* Professional Status Tags */}
-          <div className="flex flex-wrap justify-center gap-3 mb-12">
-            <span className="px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm text-white/90">
-              ✨ Healthcare AI Developer
-            </span>
-            <span className="px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm text-white/90">
-              🏥 Former Medical Student
-            </span>
-            <span className="px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm text-white/90">
-              📍 Chicago, IL
+          {/* Status Badge */}
+          <div className="flex justify-center mb-8">
+            <span className="inline-block px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full text-sm font-semibold shadow-md animate-pulse" title="Available for opportunities" aria-label="Available for opportunities">
+              Available for opportunities
             </span>
           </div>
 

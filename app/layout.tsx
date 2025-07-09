@@ -34,16 +34,9 @@ export const metadata: Metadata = {
     description: 'Portfolio of Ravi Suresh – Health AI innovator and web engineer specializing in healthcare technology solutions.',
     images: ['/og-image.jpg'],
   },
-  // viewport: 'width=device-width, initial-scale=1',
-  // themeColor: '#3B82F6',
+  viewport: 'width=device-width, initial-scale=1',
+  themeColor: '#3B82F6',
 }
-
-export const viewport = {
-  width: 'device-width',
-  initialScale: 1,
-};
-
-export const themeColor = '#3B82F6';
 
 export default function RootLayout({
   children,

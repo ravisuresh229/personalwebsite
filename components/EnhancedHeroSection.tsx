@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Code2, Database, Brain, Stethoscope, Zap, Globe } from 'lucide-react';
 
-const FloatingParticle = ({ delay, duration = 25, size = 4 }) => (
+interface FloatingParticleProps {
+  delay: number;
+  duration?: number;
+  size?: number;
+}
+
+const FloatingParticle = ({ delay, duration = 25, size = 4 }: FloatingParticleProps) => (
   <div 
     className="absolute rounded-full bg-white/20"
     style={{
@@ -15,7 +21,15 @@ const FloatingParticle = ({ delay, duration = 25, size = 4 }) => (
   />
 );
 
-const FloatingIcon = ({ Icon, delay, duration = 30, size = 32, className = "" }) => (
+interface FloatingIconProps {
+  Icon: React.ComponentType<{ size?: number }>;
+  delay: number;
+  duration?: number;
+  size?: number;
+  className?: string;
+}
+
+const FloatingIcon = ({ Icon, delay, duration = 30, size = 32, className = "" }: FloatingIconProps) => (
   <div 
     className={`absolute opacity-10 text-white/30 ${className}`}
     style={{
@@ -29,7 +43,12 @@ const FloatingIcon = ({ Icon, delay, duration = 30, size = 32, className = "" })
   </div>
 );
 
-const TypeWriter = ({ text, className = "" }) => {
+interface TypeWriterProps {
+  text: string;
+  className?: string;
+}
+
+const TypeWriter = ({ text, className = "" }: TypeWriterProps) => {
   // Instantly show the text, no animation
   return (
     <span className={className}>{text}</span>

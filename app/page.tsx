@@ -21,6 +21,7 @@ import {
 import EnhancedHeroSection from '@/components/EnhancedHeroSection'
 import EnhancedProjectCard from '@/components/EnhancedProjectCard'
 import CleanSkillsSection from '@/components/CleanSkillsSection'
+import { Navbar1 } from '@/components/ui/navbar-1'
 
 export default function Home() {
   const [mounted, setMounted] = useState(false)
@@ -38,16 +39,18 @@ export default function Home() {
       title: "ReferralGuard",
       description: "AI-powered referral leakage detection platform for Medicare providers. Built with FastAPI, S3, and a Next.js dashboard.",
       icon: Shield,
-      tech: ["FastAPI", "Next.js", "AWS S3", "Machine Learning"],
+      image: "/Screenshot 2025-07-10 at 3.01.45 PM.png",
+      tech: ["FastAPI", "Next.js", "AWS S3", "Machine Learning", "AI Analytics", "Predictive Modeling", "Claude Sonnet", "Cursor AI"],
       impact: "Reduced referral leakage by 23% for 50+ providers",
-      demoUrl: "https://referralguard-demo.vercel.app",
-      githubUrl: "https://github.com/ravisuresh/referralguard"
+      demoUrl: "https://referralguard.vercel.app",
+      githubUrl: "https://github.com/ravisuresh229/referralguard"
     },
     {
       title: "AuthorizationIQ",
       description: "ML-powered prior authorization approval predictor. Built with React, Tailwind CSS, and FastAPI backend. Provides real-time approval probability and recommendations for healthcare providers.",
       icon: Brain,
-      tech: ["React", "Tailwind CSS", "FastAPI", "Scikit-learn"],
+      image: "/Screenshot 2025-07-10 at 3.02.03 PM.png",
+      tech: ["React", "Tailwind CSS", "FastAPI", "Scikit-learn", "Machine Learning", "AI Insights", "Predictive Modeling", "Claude Sonnet", "Cursor AI"],
       impact: "Clinical-grade precision for prior authorization predictions",
       demoUrl: "https://authorizationiq.vercel.app",
       githubUrl: "https://github.com/ravisuresh229/authorizationiq"
@@ -56,7 +59,7 @@ export default function Home() {
       title: "Hospital Benchmark Tool",
       description: "Compares hospital performance metrics using public data with interactive dashboards and data visualizations.",
       icon: TrendingUp,
-      tech: ["React", "D3.js", "Python", "PostgreSQL"],
+      tech: ["React", "D3.js", "Python", "PostgreSQL", "Data Visualization", "Claude Sonnet", "Cursor AI"],
       impact: "Used by 200+ healthcare administrators",
       demoUrl: "https://hospital-benchmark.vercel.app",
       githubUrl: "https://github.com/ravisuresh/hospital-benchmark"
@@ -75,76 +78,72 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              className="text-xl font-bold gradient-text"
-            >
-              RS
-            </motion.div>
-            <div className="hidden md:flex space-x-8">
-              {['About', 'Projects', 'Skills', 'Contact'].map((item) => (
-                <a
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
-                  className="text-gray-700 hover:text-blue-600 transition-colors duration-200"
-                >
-                  {item}
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navbar1 />
 
       {/* Enhanced Hero Section */}
       <EnhancedHeroSection />
 
       {/* About Section */}
-      <section id="about" className="section-padding bg-white">
-        <div className="container-max">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">About Me</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
-          </motion.div>
-          
-          {/* About Me Content */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="max-w-4xl mx-auto mb-16"
-          >
-            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 md:p-12 shadow-lg">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
-                From Analysis to Innovation
-              </h3>
-              <div className="text-lg text-gray-700 leading-relaxed space-y-4">
-                <p>
-                  I'm Ravi, a problem solver who builds AI solutions that actually work. I discovered the power of combining analytical thinking with modern technology to solve complex challenges across industries.
-                </p>
-                <p>
-                  I specialize in turning messy data into intelligent systems - whether that's predicting outcomes, automating decisions, or finding patterns that humans miss.
-                </p>
+      <section id="about" className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-6">
+          {/* Simple Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+            <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
+          </div>
+          {/* Main Story - Short & Sweet */}
+          <div className="text-center mb-16">
+            <p className="text-2xl text-gray-800 leading-relaxed font-light max-w-3xl mx-auto">
+              I made the jump from medical school to AI development. Building solutions that combine analytical rigor with creative problem-solving.
+            </p>
+          </div>
+          {/* Visual Journey Cards - Simplified */}
+          <div className="grid md:grid-cols-3 gap-6 mb-16">
+            {/* Medical Background */}
+            <div className="group bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-8 text-white text-center hover:scale-105 transition-all duration-300">
+              <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                {/* Medical Icon */}
+                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
               </div>
+              <h3 className="text-xl font-bold mb-2">Medical Background</h3>
+              <p className="text-blue-100 text-sm">Systematic thinking & problem analysis</p>
             </div>
-          </motion.div>
-          
-          <div className="mb-12">
-            <CleanSkillsSection />
+            {/* The Pivot */}
+            <div className="group bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl p-8 text-white text-center hover:scale-105 transition-all duration-300">
+              <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                {/* AI Icon */}
+                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-2">AI Development</h3>
+              <p className="text-purple-100 text-sm">Building intelligent solutions</p>
+            </div>
+            {/* Healthcare Focus */}
+            <div className="group bg-gradient-to-br from-green-500 to-green-600 rounded-2xl p-8 text-white text-center hover:scale-105 transition-all duration-300">
+              <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                {/* Healthcare Icon */}
+                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Healthcare AI</h3>
+              <p className="text-green-100 text-sm">Where experience meets innovation</p>
+            </div>
+          </div>
+          {/* Simple Quote */}
+          <div className="text-center">
+            <blockquote className="text-xl text-gray-600 italic font-light">
+              "Building technology that feels inevitable"
+            </blockquote>
           </div>
         </div>
       </section>
+
+      {/* What I Do & Technologies I Work With */}
+      <CleanSkillsSection />
 
       {/* Projects Section */}
       <section id="projects" className="section-padding bg-gray-50">

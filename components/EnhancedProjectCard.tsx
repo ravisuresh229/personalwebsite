@@ -33,15 +33,21 @@ const EnhancedProjectCard: React.FC<EnhancedProjectCardProps> = ({ project, inde
       className="group"
     >
       <Card className="h-full border-0 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white/80 backdrop-blur-sm">
-        {/* Project Image Placeholder */}
-        <div className="relative h-48 bg-gradient-to-br from-blue-50 to-purple-50 overflow-hidden rounded-t-lg">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-purple-400/20" />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="p-6 bg-white/80 rounded-full shadow-lg">
-              <project.icon className="w-12 h-12 text-blue-600" />
+        {/* Project Image or Icon */}
+        <div className="relative h-48 bg-gradient-to-br from-blue-50 to-purple-50 overflow-hidden rounded-t-lg flex items-center justify-center">
+          {project.image ? (
+            <img
+              src={project.image}
+              alt={`${project.title} screenshot`}
+              className="w-full h-48 object-cover rounded-t-lg border border-gray-200 shadow-sm"
+            />
+          ) : (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="p-6 bg-white/80 rounded-full shadow-lg">
+                <project.icon className="w-12 h-12 text-blue-600" />
+              </div>
             </div>
-          </div>
-          
+          )}
           {/* Hover Overlay */}
           <motion.div
             initial={{ opacity: 0 }}

@@ -134,12 +134,13 @@ const EnhancedHeroSection = () => {
             {/* Download Resume Button */}
             <a
               href="/Ravi_Suresh_Resume.pdf"
-              download="Ravi_Suresh_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl relative overflow-hidden"
-              title="Download Resume"
-              aria-label="Download Resume"
+              title="View Resume"
+              aria-label="View Resume"
             >
-              <span className="relative z-10 font-semibold">Download Resume</span>
+              <span className="relative z-10 font-semibold">View Resume</span>
               <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-white/0 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
             </a>
             {/* Social Icons */}

@@ -62,166 +62,45 @@ const EnhancedHeroSection = () => {
     setIsVisible(true);
   }, []);
 
-  // Generate particles
-  const particles = Array.from({ length: 50 }, (_, i) => (
-    <FloatingParticle 
-      key={i} 
-      delay={i * 0.2} 
-      size={Math.random() * 6 + 2}
-      duration={20 + Math.random() * 10}
-    />
-  ));
-
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-purple-900 via-purple-800 to-blue-900 overflow-hidden">
-      {/* Animated Background Particles */}
-      <div className="absolute inset-0">
-        {particles}
-      </div>
-
-      {/* Floating Tech Icons */}
-      <div className="absolute inset-0">
-        <FloatingIcon Icon={Code2} delay={0} size={40} className="hover:opacity-30 transition-opacity" />
-        <FloatingIcon Icon={Database} delay={3} size={36} />
-        <FloatingIcon Icon={Brain} delay={6} size={42} />
-        <FloatingIcon Icon={Stethoscope} delay={9} size={38} />
-        <FloatingIcon Icon={Zap} delay={12} size={34} />
-        <FloatingIcon Icon={Globe} delay={15} size={40} />
-      </div>
-
-      {/* Gradient Mesh Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-blue-600/10" />
-      
-      {/* Radial Gradient Behind Avatar */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-radial from-white/5 to-transparent rounded-full blur-3xl" />
-
-      {/* Main Content */}
-      <div className="relative z-10 flex items-center justify-center min-h-screen px-4">
-        <div className={`text-center transform transition-all duration-1000 ${
-          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-        }`}>
-          
-          {/* Enhanced Profile Circle */}
-          <div className="relative w-32 h-32 mx-auto mb-8 group">
-            {/* Rotating Ring */}
-            <div className="absolute inset-0 rounded-full border-2 border-dashed border-white/30 animate-spin-slow"></div>
-            
-            {/* Main Avatar */}
-            <div className="relative w-full h-full bg-gradient-to-br from-blue-400 via-purple-500 to-pink-400 rounded-full flex items-center justify-center text-white text-4xl font-bold shadow-2xl transform group-hover:scale-110 transition-transform duration-300">
-              <span className="relative z-10">RS</span>
-              {/* Glow Effect */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
-            </div>
-          </div>
-
-          {/* Enhanced Name with Multiple Gradients */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 relative">
-            <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient">
-              Ravi Suresh
-            </span>
-          </h1>
-
-          {/* Animated Tagline with Better Styling */}
-          <div className="text-xl md:text-2xl text-gray-200 mb-8 h-16 flex items-center justify-center font-light">
-            <TypeWriter 
-              text="Building AI solutions that solve real problems"
-              className="max-w-3xl leading-relaxed"
-            />
-          </div>
-
-          {/* Social & Resume Row */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
-            {/* Download Resume Button */}
-            <a
-              href="/Ravi_Suresh_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl relative overflow-hidden"
-              title="View Resume"
-              aria-label="View Resume"
-            >
-              <span className="relative z-10 font-semibold">View Resume</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-white/0 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-            </a>
-            {/* Social Icons */}
-            <div className="flex gap-4">
-              <a
-                href="https://github.com/ravisuresh229"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 text-white hover:from-purple-600 hover:to-blue-500 transition-all duration-300 shadow-md hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                title="GitHub"
-                aria-label="GitHub"
-              >
-                <Github className="w-6 h-6" />
-              </a>
-              <a
-                href="mailto:ravikirans723@gmail.com?subject=Let's%20work%20together&body=Hi%20Ravi,%0A%0AI%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20working%20together.%0A%0ABest%20regards,"
-                className="p-3 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 text-white hover:from-purple-600 hover:to-blue-500 transition-all duration-300 shadow-md hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                title="Email"
-                aria-label="Email"
-              >
-                <Mail className="w-6 h-6" />
-              </a>
-              {/* LinkedIn not provided in resume, so skip or add placeholder if needed */}
-            </div>
-          </div>
-
-          {/* Status Badge */}
-          <div className="flex justify-center mb-8">
-            <span className="inline-block px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full text-sm font-semibold shadow-md animate-pulse" title="Available for opportunities" aria-label="Available for opportunities">
-              Available for opportunities
-            </span>
-          </div>
-
-          {/* Enhanced Scroll Indicator */}
-          <div className="animate-bounce hover:animate-pulse cursor-pointer">
-            <div className="flex flex-col items-center gap-2">
-              <span className="text-white/60 text-sm">Scroll to explore</span>
-              <ChevronDown className="w-6 h-6 text-white/60" />
-            </div>
-          </div>
+    <section className="relative min-h-screen flex items-center justify-center bg-gray-50 border-b border-gray-200">
+      <div className={`max-w-4xl mx-auto text-center transform transition-all duration-1000 ${
+        isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+      }`}>
+        {/* Logo */}
+        <div className="w-24 h-24 bg-gray-900 rounded-lg mx-auto mb-8 flex items-center justify-center text-2xl font-bold text-white">
+          RS
+        </div>
+        {/* Name */}
+        <h1 className="text-5xl md:text-6xl font-light mb-6 leading-tight text-gray-900">
+          Ravi Suresh
+        </h1>
+        {/* Tagline */}
+        <p className="text-xl md:text-2xl mb-8 text-gray-600 max-w-2xl mx-auto leading-relaxed font-light">
+          Building AI solutions that solve real problems
+        </p>
+        {/* CTAs */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <a
+            href="/Ravi_Suresh_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gray-900 text-white px-8 py-3 rounded-md font-medium hover:bg-gray-800 transition-colors"
+          >
+            View Resume
+          </a>
+          <a
+            href="#projects"
+            className="border border-gray-300 text-gray-700 px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors"
+          >
+            View Projects
+          </a>
+        </div>
+        <div className="text-sm text-gray-500">
+          Available for opportunities
         </div>
       </div>
-
-      <style jsx>{`
-        @keyframes floatParticle {
-          0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.7; }
-          25% { transform: translateY(-20px) translateX(10px); opacity: 1; }
-          50% { transform: translateY(-40px) translateX(-5px); opacity: 0.8; }
-          75% { transform: translateY(-20px) translateX(15px); opacity: 0.9; }
-        }
-        
-        @keyframes floatIcon {
-          0%, 100% { transform: translateY(0px) rotate(0deg); }
-          33% { transform: translateY(-30px) rotate(120deg); }
-          66% { transform: translateY(-15px) rotate(240deg); }
-        }
-        
-        @keyframes spin-slow {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
-        }
-        
-        @keyframes gradient {
-          0%, 100% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-        }
-        
-        .animate-spin-slow {
-          animation: spin-slow 20s linear infinite;
-        }
-        
-        .animate-gradient {
-          background-size: 200% 200%;
-          animation: gradient 3s ease infinite;
-        }
-        
-        .bg-gradient-radial {
-          background: radial-gradient(circle, var(--tw-gradient-stops));
-        }
-      `}</style>
-    </div>
+    </section>
   );
 };
 

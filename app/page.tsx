@@ -40,7 +40,7 @@ export default function Home() {
       description: "AI-powered referral leakage detection platform for Medicare providers. Built with FastAPI, S3, and a Next.js dashboard.",
       icon: Shield,
       image: "/Screenshot 2025-07-10 at 3.01.45 PM.png",
-      tech: ["FastAPI", "Next.js", "AWS S3", "Machine Learning", "AI Analytics", "Predictive Modeling", "Claude Sonnet", "Cursor AI"],
+      tech: ["FastAPI", "Next.js", "AWS S3", "PostgreSQL", "Random Forest", "Claude Sonnet"],
       impact: "Reduced referral leakage by 23% for 50+ providers",
       demoUrl: "https://referralguard.vercel.app",
       githubUrl: "https://github.com/ravisuresh229/referralguard"
@@ -50,19 +50,20 @@ export default function Home() {
       description: "ML-powered prior authorization approval predictor. Built with React, Tailwind CSS, and FastAPI backend. Provides real-time approval probability and recommendations for healthcare providers.",
       icon: Brain,
       image: "/Screenshot 2025-07-10 at 3.02.03 PM.png",
-      tech: ["React", "Tailwind CSS", "FastAPI", "Scikit-learn", "Machine Learning", "AI Insights", "Predictive Modeling", "Claude Sonnet", "Cursor AI"],
+      tech: ["React", "Tailwind CSS", "FastAPI", "Scikit-learn", "Predictive Modeling", "Cursor AI"],
       impact: "Clinical-grade precision for prior authorization predictions",
       demoUrl: "https://authorizationiq.vercel.app",
       githubUrl: "https://github.com/ravisuresh229/authorizationiq"
     },
     {
-      title: "Hospital Benchmark Tool",
-      description: "Compares hospital performance metrics using public data with interactive dashboards and data visualizations.",
+      title: "CareMetrics Pro",
+      description: "Advanced Healthcare Analytics Platform for benchmarking and visualizing hospital performance. Features interactive dashboards, PDF export, and real-time data insights.",
       icon: TrendingUp,
-      tech: ["React", "D3.js", "Python", "PostgreSQL", "Data Visualization", "Claude Sonnet", "Cursor AI"],
-      impact: "Used by 200+ healthcare administrators",
-      demoUrl: "https://hospital-benchmark.vercel.app",
-      githubUrl: "https://github.com/ravisuresh/hospital-benchmark"
+      image: "/Screenshot 2025-07-10 at 11.54.26 PM.png",
+      tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion", "Node.js", "Healthcare Analytics"],
+      impact: "Used by 3,800+ hospitals for data-driven decision making",
+      demoUrl: "https://caremetricspro.vercel.app",
+      githubUrl: "https://github.com/ravisuresh229/caremetricspro"
     }
   ]
 

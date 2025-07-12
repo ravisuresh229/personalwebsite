@@ -41,7 +41,6 @@ export default function Home() {
       icon: Shield,
       image: "/Screenshot 2025-07-10 at 3.01.45 PM.png",
       tech: ["FastAPI", "Next.js", "AWS S3", "PostgreSQL", "Random Forest", "Claude Sonnet"],
-      impact: "Reduced referral leakage by 23% for 50+ providers",
       demoUrl: "https://referralguard.vercel.app",
       githubUrl: "https://github.com/ravisuresh229/referralguard"
     },
@@ -51,7 +50,6 @@ export default function Home() {
       icon: Brain,
       image: "/Screenshot 2025-07-10 at 3.02.03 PM.png",
       tech: ["React", "Tailwind CSS", "FastAPI", "Scikit-learn", "Predictive Modeling", "Cursor AI"],
-      impact: "Clinical-grade precision for prior authorization predictions",
       demoUrl: "https://authorizationiq.vercel.app",
       githubUrl: "https://github.com/ravisuresh229/authorizationiq"
     },
@@ -61,7 +59,6 @@ export default function Home() {
       icon: TrendingUp,
       image: "/Screenshot 2025-07-10 at 11.54.26 PM.png",
       tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion", "Node.js", "Healthcare Analytics"],
-      impact: "Used by 3,800+ hospitals for data-driven decision making",
       demoUrl: "https://caremetricspro.vercel.app",
       githubUrl: "https://github.com/ravisuresh229/caremetricspro"
     }

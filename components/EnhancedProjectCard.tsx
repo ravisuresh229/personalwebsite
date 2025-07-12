@@ -8,7 +8,7 @@ interface Project {
   description: string;
   icon: LucideIcon;
   tech: string[];
-  impact: string;
+  impact?: string;
   demoUrl?: string;
   githubUrl?: string;
   image?: string;
@@ -116,10 +116,12 @@ const EnhancedProjectCard: React.FC<EnhancedProjectCardProps> = ({ project, inde
           </div>
           
           <div className="pt-4 border-t border-gray-200">
-            <div className="flex items-center space-x-2 text-green-600">
-              <Zap className="w-4 h-4" />
-              <span className="text-sm font-medium">{project.impact}</span>
-            </div>
+            {project.impact && (
+              <div className="flex items-center space-x-2 text-green-600">
+                <Zap className="w-4 h-4" />
+                <span className="text-sm font-medium">{project.impact}</span>
+              </div>
+            )}
           </div>
         </CardContent>
       </Card>

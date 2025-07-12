@@ -170,7 +170,7 @@ export default function Home() {
             Interested in AI solutions, consulting opportunities, or technical collaboration.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <a href="mailto:ravi.suresh.ai@gmail.com" className="bg-gray-900 text-white px-8 py-3 rounded-md font-medium hover:bg-gray-800 transition-colors">
+            <a href="mailto:ravikirans723@gmail.com" className="bg-gray-900 text-white px-8 py-3 rounded-md font-medium hover:bg-gray-800 transition-colors">
               Email Me
             </a>
             <a href="https://linkedin.com/in/ravisuresh1" target="_blank" rel="noopener noreferrer" className="border border-gray-600 text-gray-700 px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors">

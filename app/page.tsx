@@ -95,7 +95,7 @@ export default function Home() {
             {/* Main Story */}
             <div className="text-center mb-16">
               <p className="text-xl text-gray-700 leading-relaxed font-light max-w-3xl mx-auto">
-                I left medical school to build <span className="font-medium text-gray-900">AI solutions</span> that solve real problems. <br className="hidden md:block" />Combining analytical thinking with creative problem-solving.
+                My background in medicine and technology allows me to bridge the gap between healthcare and innovative digital solutions. <br className="hidden md:block" />Combining analytical thinking with creative problem-solving.
               </p>
             </div>
             {/* Journey Cards */}

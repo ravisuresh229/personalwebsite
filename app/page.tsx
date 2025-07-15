@@ -57,7 +57,7 @@ export default function Home() {
       title: "CareMetrics Pro",
       description: "Advanced Healthcare Analytics Platform for benchmarking and visualizing hospital performance. Features interactive dashboards, PDF export, and real-time data insights.",
       icon: TrendingUp,
-      image: "/Screenshot 2025-07-10 at 11.54.26 PM.png",
+      image: "/caremetrics.png",
       tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion", "Node.js", "Healthcare Analytics"],
       demoUrl: "https://caremetricspro.vercel.app",
       githubUrl: "https://github.com/ravisuresh229/caremetricspro"

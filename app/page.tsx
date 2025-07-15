@@ -39,7 +39,7 @@ export default function Home() {
       title: "ReferralGuard",
       description: "AI-powered referral leakage detection platform for Medicare providers. Built with FastAPI, S3, and a Next.js dashboard.",
       icon: Shield,
-      image: "/Screenshot 2025-07-10 at 3.01.45 PM.png",
+      image: "/Screenshot 2025-07-14 at 7.12.16 PM.png",
       tech: ["FastAPI", "Next.js", "AWS S3", "PostgreSQL", "Random Forest", "Claude Sonnet"],
       demoUrl: "https://referralguard.vercel.app",
       githubUrl: "https://github.com/ravisuresh229/referralguard"

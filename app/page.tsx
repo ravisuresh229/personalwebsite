@@ -48,7 +48,7 @@ export default function Home() {
       title: "AuthorizationIQ",
       description: "ML-powered prior authorization approval predictor. Built with React, Tailwind CSS, and FastAPI backend. Provides real-time approval probability and recommendations for healthcare providers.",
       icon: Brain,
-      image: "/Screenshot 2025-07-10 at 3.02.03 PM.png",
+      image: "/authiq.png",
       tech: ["React", "Tailwind CSS", "FastAPI", "Scikit-learn", "Predictive Modeling", "Cursor AI"],
       demoUrl: "https://authorizationiq.vercel.app",
       githubUrl: "https://github.com/ravisuresh229/authorizationiq"

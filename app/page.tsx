@@ -36,10 +36,19 @@ export default function Home() {
 
   const projects = [
     {
+      title: "AETHER",
+      description: "AI-powered evidence intelligence platform that accelerates evidence discovery in clinical research. Identifies evidence gaps, RWE opportunities, and provides strategic insights for healthcare organizations.",
+      icon: Zap,
+      image: "/evidencegapss.png",
+      tech: ["Next.js 15.4.3", "React 18", "TypeScript", "OpenAI GPT-4", "PubMed API", "jsPDF"],
+      demoUrl: "https://evidencegap.vercel.app",
+      githubUrl: "https://github.com/ravisuresh229/evidencegap"
+    },
+    {
       title: "ReferralGuard",
       description: "AI-powered referral leakage detection platform for Medicare providers. Built with FastAPI, S3, and a Next.js dashboard.",
       icon: Shield,
-      image: "/Screenshot 2025-07-10 at 3.01.45 PM.png",
+      image: "/referralguard-screenshot.png",
       tech: ["FastAPI", "Next.js", "AWS S3", "PostgreSQL", "Random Forest", "Claude Sonnet"],
       demoUrl: "https://referralguard.vercel.app",
       githubUrl: "https://github.com/ravisuresh229/referralguard"
@@ -48,7 +57,7 @@ export default function Home() {
       title: "AuthorizationIQ",
       description: "ML-powered prior authorization approval predictor. Built with React, Tailwind CSS, and FastAPI backend. Provides real-time approval probability and recommendations for healthcare providers.",
       icon: Brain,
-      image: "/Screenshot 2025-07-10 at 3.02.03 PM.png",
+      image: "/authiq.png",
       tech: ["React", "Tailwind CSS", "FastAPI", "Scikit-learn", "Predictive Modeling", "Cursor AI"],
       demoUrl: "https://authorizationiq.vercel.app",
       githubUrl: "https://github.com/ravisuresh229/authorizationiq"
@@ -57,7 +66,7 @@ export default function Home() {
       title: "CareMetrics Pro",
       description: "Advanced Healthcare Analytics Platform for benchmarking and visualizing hospital performance. Features interactive dashboards, PDF export, and real-time data insights.",
       icon: TrendingUp,
-      image: "/Screenshot 2025-07-10 at 11.54.26 PM.png",
+      image: "/caremetrics.png",
       tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion", "Node.js", "Healthcare Analytics"],
       demoUrl: "https://caremetricspro.vercel.app",
       githubUrl: "https://github.com/ravisuresh229/caremetricspro"

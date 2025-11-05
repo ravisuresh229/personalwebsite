@@ -61,15 +61,6 @@ export default function Home() {
       tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion", "Node.js", "Healthcare Analytics"],
       demoUrl: "https://caremetricspro.vercel.app",
       githubUrl: "https://github.com/ravisuresh229/caremetricspro"
-    },
-    {
-      title: "AETHER",
-      description: "AI-powered evidence intelligence platform that accelerates evidence discovery in clinical research. Identifies evidence gaps, RWE opportunities, and provides strategic insights for healthcare organizations.",
-      icon: Zap,
-      image: "/evidencegapss.png",
-      tech: ["Next.js 15.4.3", "React 18", "TypeScript", "OpenAI GPT-4", "PubMed API", "jsPDF"],
-      demoUrl: "https://evidencegap.vercel.app",
-      githubUrl: "https://github.com/ravisuresh229/evidencegap"
     }
   ]
 
@@ -163,7 +154,7 @@ export default function Home() {
               AI solutions that transform complex challenges into intelligent, actionable systems
             </p>
           </div>
-          <div className="grid lg:grid-cols-4 gap-8">
+          <div className="grid lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <EnhancedProjectCard key={project.title} project={project} index={index} />
             ))}

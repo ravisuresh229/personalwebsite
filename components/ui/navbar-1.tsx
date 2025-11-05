@@ -59,7 +59,7 @@ const Navbar1 = () => {
                 </a>
               ))}
               <a
-                href="/Ravi_Suresh_Resume.pdf"
+                href="/Resume AI Operations.docx"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gray-900 text-white px-6 py-3 rounded-md font-medium hover:bg-gray-800 transition-colors mt-4 text-center"

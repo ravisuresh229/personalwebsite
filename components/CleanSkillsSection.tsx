@@ -112,7 +112,7 @@ const CleanSkillsSection: React.FC = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="py-24 bg-white">
+    <section ref={sectionRef} id="skills" className="py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         <div className={`text-center mb-16 transform transition-all duration-1000 ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'

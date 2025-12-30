@@ -59,7 +59,7 @@ const Navbar1 = () => {
                 </a>
               ))}
               <a
-                href="/Resume 11/10.pdf"
+                href="/Resume%2011%2F10.docx"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gray-900 text-white px-6 py-3 rounded-md font-medium hover:bg-gray-800 transition-colors mt-4 text-center"

@@ -82,7 +82,7 @@ const EnhancedHeroSection = () => {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
           <a
-            href="/Resume 11/10.pdf"
+            href="/Resume%2011%2F10.docx"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gray-900 text-white px-8 py-3 rounded-md font-medium hover:bg-gray-800 transition-colors"

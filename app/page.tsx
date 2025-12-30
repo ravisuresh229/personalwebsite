@@ -16,7 +16,8 @@ import {
   Shield,
   Activity,
   Users,
-  Zap
+  Zap,
+  FileSearch
 } from 'lucide-react'
 import EnhancedHeroSection from '@/components/EnhancedHeroSection'
 import EnhancedProjectCard from '@/components/EnhancedProjectCard'
@@ -61,6 +62,15 @@ export default function Home() {
       tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion", "Node.js", "Healthcare Analytics"],
       demoUrl: "https://caremetricspro.vercel.app",
       githubUrl: "https://github.com/ravisuresh229/caremetricspro"
+    },
+    {
+      title: "EvidenceGaps",
+      description: "Healthcare evidence gap analysis platform for identifying and visualizing research gaps in medical literature. Built with modern web technologies to help researchers and clinicians discover areas needing further investigation.",
+      icon: FileSearch,
+      image: "/evidencegapss.png",
+      tech: ["Next.js", "React", "Data Visualization", "Healthcare Research"],
+      demoUrl: "https://evidencegap.vercel.app",
+      githubUrl: "https://github.com/ravisuresh229/evidencegaps"
     }
   ]
 
